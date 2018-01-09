@@ -4,7 +4,7 @@ class Pirate
 
   def initialize(arg)
     @name, @weight, @height = arg[:name], arg[:weight], arg[:height]
-    @@pirates << self
+    self.all << self
   end
 
   def self.all
@@ -12,4 +12,3 @@ class Pirate
   end
 
 end
- 
